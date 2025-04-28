@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Report</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+<h2 style="color: #2e6c80;">Hello <span th:text="${name}">Student Name</span>,</h2>
+
+<p>
+  We are pleased to inform you that your student record has been successfully processed.
+</p>
+
+<p>
+  Please find the attached PDF document that contains your student information.
+</p>
+
+<p>
+  Student ID: <strong th:text="${id}">123</strong>
+</p>
+
+<br/>
+
+<p>Best regards,<br/>Student Services Team</p>
+
+</body>
+</html>

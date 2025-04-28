@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+</head>
+<body>
+<h2>Student Form</h2>
+<form action="/student/create" method="post" th:object="${student}">
+    <label>First Name: <input type="text" th:field="*{name}"></label><br>
+    <label>deprtment Name: <input type="text" th:field="*{department}"></label><br>
+    <label>Email: <input type="email" th:field="*{email}"></label><br>
+    <label>Class fee: <input type="text" th:field="*{fee}"></label><br>
+<!--    <label>Fee Paid: <input type="number" step="0.01" th:field="*{feePaid}"></label><br>-->
+    <button type="submit">Save</button>
+</form>
+<br>
+
+<div th:if="${successMessage}" >
+    <p th:text="${successMessage}"></p>
+</div>
+
+
+<!-- Generate link for sending email -->
+<!--<a th:href="@{/students/send-email(studentId=${student.id})}">Send Email</a>-->
+</body>
+</html>

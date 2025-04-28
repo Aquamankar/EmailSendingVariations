@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>Hello <span th:text="${name}">Student</span>,</h2>
+<p>Here are your details:</p>
+<ul>
+  <li><strong>ID:</strong> <span th:text="${student.id}"></span></li>
+  <li><strong>Name:</strong> <span th:text="${student.name}"></span></li>
+  <li><strong>Email:</strong> <span th:text="${student.email}"></span></li>
+</ul>
+<p>Thank you!</p>
+</body>
+</html>

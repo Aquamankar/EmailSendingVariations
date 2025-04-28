@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+    .promo { background: #f0f8ff; padding: 20px; }
+  </style>
+</head>
+<body>
+<p>Hello <span th:text="${name}">Student</span>,</p>
+<p>Your ID: <strong th:text="${id}"></strong></p>
+
+<!-- Embedded Image -->
+<img src="cid:banner" width="600" alt="Promo Banner" />
+
+<div class="promo">
+    <h3>Special Offer!</h3>
+    <p th:text="${promoMessage}"></p>
+    <a href="https://example.com/register">Register Now</a>
+</div>
+</body>
+</html>

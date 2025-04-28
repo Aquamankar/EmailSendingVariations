@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Send Bulk Email</title>
+</head>
+<body>
+<h2>Send Bulk Promotional Emails</h2>
+
+<form th:action="@{/student/bulk-email}" method="post">
+  <label for="ids">Enter Student IDs (comma separated):</label><br>
+  <input type="text" id="ids" name="ids" placeholder="e.g., 1,2,3"><br><br>
+  <button type="submit">Send Emails</button>
+</form>
+
+</body>
+</html>
